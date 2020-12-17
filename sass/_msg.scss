@@ -1,0 +1,54 @@
+.msg-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  left: 26px;
+  top: 19px;
+}
+
+.msg {
+  min-width: 504px;
+  min-height: 266px;
+  background: $item-bg;
+  margin: 15% 20px 2.5%;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg__img {
+  margin: 30px;
+}
+
+.msg__title {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  line-height: 19.5px;
+  margin: 0 20px 18px 20px;
+  color: #ED5338;
+}
+
+.msg__descr {
+  font-size: 10px;
+  text-align: center;
+  color: #777F90;
+  margin: 0 20px 20px;
+}
+
+@media screen and (max-width: 530px) {
+  .msg {
+    min-width: 0;
+    max-width: 98%;
+    margin-top: 100px;
+  }
+}

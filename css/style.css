@@ -18,20 +18,173 @@ html {
   font-family: "Proxima Nova";
 }
 
+html * :focus {
+  outline: none;
+}
+
 body {
   background: #F7F7F7;
 }
 
 .container {
   max-width: 1920px;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar-container {
+  width: 263px;
+  height: 100%;
+  position: relative;
+}
+
+.sidebar__logo {
+  padding: 25px 0 60px 25px;
+}
+
+.sidebar {
+  width: 100%;
+  background: #FFF;
+  border-radius: 0px 16px 16px 0px;
+  margin: 12px 28px 12px 0;
+}
+
+.sidebar__close {
+  height: 39px;
+  width: 39px;
+  padding-left: 10px;
+  border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: -10px;
+  top: 75px;
+  border: none;
+  background: #FFF;
+  cursor: pointer;
+}
+
+.sidebar__arrow {
+  height: 12px;
+  width: 12px;
+  border: 2px #4E8EF8 solid;
+  border-right: 0;
+  border-top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sidebar__list {
+  padding-bottom: 20px;
+}
+
+.sidebar__item {
+  min-height: 50px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+.sidebar__item:hover:not(.item-disable) {
+  background-color: #F7F7F7;
+}
+
+.sidebar__item:hover:not(.item-disable) .sidebar__img {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+}
+
+.sidebar__item--plus {
+  background: url("/img/sidebar-icons/extend.svg") right 17px center no-repeat;
+}
+
+.extend {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+  background: #F7F7F7 url("/img/sidebar-icons/Edit.svg") right 15px center no-repeat;
+  padding-left: 74px;
+}
+
+.extend:hover {
+  color: #4E8EF8;
+  border-right: 2px #4E8EF8 solid;
+  cursor: pointer;
+}
+
+.extend__img {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+  border: 2px solid #BDBDC7;
+}
+
+.sidebar__img {
+  -webkit-filter: opacity(0.69);
+          filter: opacity(0.69);
+}
+
+.item-disable {
+  cursor: auto;
+  background: url("/img/sidebar-icons/lock.svg") right 20px center no-repeat;
+}
+
+.sidebar__img-wrap {
+  min-height: 50px;
+  min-width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+}
+
+.sidebar__item-name {
+  padding-right: 10px;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.msg-container {
+  max-width: 1920px;
+  margin: 0 auto;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo {
@@ -44,7 +197,7 @@ body {
   min-width: 504px;
   min-height: 266px;
   background: #FFF;
-  margin: 13% 2.5% 2.5% 2.5%;
+  margin: 15% 20px 2.5%;
   border-radius: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,6 +221,7 @@ body {
 .msg__title {
   font-weight: 600;
   font-size: 16px;
+  text-align: center;
   line-height: 19.5px;
   margin: 0 20px 18px 20px;
   color: #ED5338;
@@ -75,6 +229,15 @@ body {
 
 .msg__descr {
   font-size: 10px;
+  text-align: center;
   color: #777F90;
-  margin: 0 2.5% 2.5%;
+  margin: 0 20px 20px;
+}
+
+@media screen and (max-width: 530px) {
+  .msg {
+    min-width: 0;
+    max-width: 98%;
+    margin-top: 100px;
+  }
 }

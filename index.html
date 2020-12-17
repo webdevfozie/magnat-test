@@ -11,12 +11,56 @@
 
 <body>
   <div class="container">
-    <img class="logo" src="img/logo.svg"></img>
-    <div class="msg">
-      <img class="msg__img" src="img/msg-late.svg" alt="Message Late">
-      <h2 class="msg__title">Не удалось найти запрос на восстановление пароля</h2>
-      <span class="msg__descr">Возможно, прошло более 72 часов с момента его подачи.</span>
-    </div>
+    <aside class="sidebar-container">
+      <div class="sidebar">
+        <img class="sidebar__logo" src="img/logo.svg">
+        <button class="sidebar__close" type="button">
+          <div class="sidebar__arrow"></div>
+        </button>
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <div class="sidebar__img-wrap">
+              <img class="sidebar__img" src="/img/sidebar-icons/1.svg" alt="Profile">
+            </div>
+            <span class="sidebar__item-name">Профиль</span>
+          </li>
+          <li class="sidebar__item sidebar__item--plus">
+            <div class="sidebar__img-wrap">
+              <img class="sidebar__img" src="/img/sidebar-icons/2.svg" alt="Projects">
+            </div>
+            <span class="sidebar__item-name">Проекты</span>
+          </li>
+          <div class="extend">
+            <img class="extend__img" src="/img/sidebar-icons/museum.jpg" alt="">
+            Art-museum
+          </div>
+          <li class="sidebar__item sidebar__item--plus">
+            <div class="sidebar__img-wrap">
+              <img class="sidebar__img" src="/img/sidebar-icons/3.svg" alt="Company">
+            </div>
+            <span class="sidebar__item-name">Организация</span>
+          </li>
+          <li class="sidebar__item sidebar__item--plus">
+            <div class="sidebar__img-wrap">
+              <img class="sidebar__img" src="/img/sidebar-icons/4.svg" alt="Events">
+            </div>
+            <span class="sidebar__item-name">Мероприятия</span>
+          </li>
+          <li class="sidebar__item item-disable">
+            <div class="sidebar__img-wrap">
+              <img class="sidebar__img" src="/img/sidebar-icons/5.svg" alt="Goods">
+            </div>
+            <span class="sidebar__item-name">Товары</span>
+          </li>
+          <li class="sidebar__item item-disable">
+            <div class="sidebar__img-wrap">
+              <img class="sidebar__img" src="/img/sidebar-icons/6.svg" alt="Favorites">
+            </div>
+            <span class="sidebar__item-name">Избранное</span>
+          </li>
+        </ul>
+      </div>
+    </aside>
   </div>
 </body>
 

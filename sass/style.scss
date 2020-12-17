@@ -3,6 +3,10 @@
 
 html {
   font-family: "Proxima Nova";
+
+  & * :focus {
+    outline: none;
+  }
 }
 
 body {
@@ -11,44 +15,121 @@ body {
 
 .container {
   max-width: 1920px;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
+}
+
+.sidebar-container {
+  width: 263px;
+  height: 100%;
   position: relative;
 }
 
-.logo {
-  position: absolute;
-  left: 26px;
-  top: 19px;
+.sidebar__logo {
+  padding: 25px 0 60px 25px;
 }
 
-.msg {
-  min-width: 504px;
-  min-height: 266px;
+.sidebar {
+  width: 100%;
   background: $item-bg;
-  margin: 13% 2.5% 2.5% 2.5%;
-  border-radius: 17px;
+  border-radius: 0px 16px 16px 0px;
+  margin: 12px 28px 12px 0;
+}
+
+.sidebar__close {
+  height: 39px;
+  width: 39px;
+  padding-left: 10px;
+  border-radius: 50px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  right: -10px;
+  top: 75px;
+  border: none;
+  background: $item-bg;
+  cursor: pointer;
 }
 
-.msg__img {
-  margin: 30px;
+.sidebar__arrow {
+  height: 12px;
+  width: 12px;
+  border: 2px $main-color solid;
+  border-right: 0;
+  border-top: 0;
+  transform: rotate(45deg);
 }
 
-.msg__title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19.5px;
-  margin: 0 20px 18px 20px;
-  color: #ED5338;
+.sidebar__list {
+  padding-bottom: 20px;
 }
 
-.msg__descr {
-  font-size: 10px;
-  color: #777F90;
-  margin: 0 2.5% 2.5%;
+.sidebar__item {
+  min-height: 50px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color .2s;
+
+  &:hover:not(.item-disable) {
+    background-color: $main-bg;
+
+    & .sidebar__img {
+      filter: opacity(1)
+    }
+  }
 }
+
+.sidebar__item--plus {
+  background: url('/img/sidebar-icons/extend.svg') right 17px center no-repeat;
+}
+
+.extend {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background: $main-bg url('/img/sidebar-icons/Edit.svg') right 15px center no-repeat;
+  padding-left: 74px;
+
+  &:hover {
+    color: $main-color;
+    border-right: 2px $main-color solid;
+    cursor: pointer;
+  }
+}
+
+.extend__img {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+  border: 2px solid #BDBDC7;
+}
+
+.sidebar__img {
+  filter: opacity(.69)
+}
+
+.item-disable {
+  cursor: auto;
+  background: url('/img/sidebar-icons/lock.svg') right 20px center no-repeat;
+}
+
+.sidebar__img-wrap {
+  min-height: 50px;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.sidebar__item-name {
+  padding-right: 10px;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+@import '_msg'
