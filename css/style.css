@@ -1,1 +1,80 @@
-/* No CSS */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Regular.woff") format("woff"), url("/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("/fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("/fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Bold.woff") format("woff"), url("/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  font-family: "Proxima Nova";
+}
+
+body {
+  background: #F7F7F7;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 26px;
+  top: 19px;
+}
+
+.msg {
+  min-width: 504px;
+  min-height: 266px;
+  background: #FFF;
+  margin: 13% 2.5% 2.5% 2.5%;
+  border-radius: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.msg__img {
+  margin: 30px;
+}
+
+.msg__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin: 0 20px 18px 20px;
+  color: #ED5338;
+}
+
+.msg__descr {
+  font-size: 10px;
+  color: #777F90;
+  margin: 0 2.5% 2.5%;
+}

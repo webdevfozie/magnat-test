@@ -1,0 +1,54 @@
+@import "_variables";
+@import "_fonts";
+
+html {
+  font-family: "Proxima Nova";
+}
+
+body {
+  background: $main-bg;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 26px;
+  top: 19px;
+}
+
+.msg {
+  min-width: 504px;
+  min-height: 266px;
+  background: $item-bg;
+  margin: 13% 2.5% 2.5% 2.5%;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg__img {
+  margin: 30px;
+}
+
+.msg__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin: 0 20px 18px 20px;
+  color: #ED5338;
+}
+
+.msg__descr {
+  font-size: 10px;
+  color: #777F90;
+  margin: 0 2.5% 2.5%;
+}
