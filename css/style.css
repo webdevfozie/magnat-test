@@ -28,6 +28,7 @@ body {
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,7 +196,7 @@ body {
           align-items: center;
   height: 35px;
   background: #F7F7F7 url("/img/sidebar-icons/Edit.svg") right 15px center no-repeat;
-  padding-left: 74px;
+  padding-left: 30%;
 }
 
 .extend:hover {
@@ -356,6 +357,10 @@ body {
   padding: 40px 50px 55px 35px;
 }
 
+.user__profile {
+  max-width: 630px;
+}
+
 .user__bio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,8 +419,116 @@ body {
   color: #BDBDC7;
 }
 
+.user__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  margin-bottom: 35px;
+}
+
+.user__icon {
+  cursor: pointer;
+}
+
+.user__icon:not(:last-child) {
+  margin-right: 25px;
+}
+
+.category__title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.category__item {
+  position: relative;
+  font-size: 14px;
+  color: #BDBDC7;
+  border: 1px #BDBDC7 solid;
+  border-radius: 34px;
+  padding: 5px 8px 5px 24px;
+}
+
+.category__item:before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  width: 8px;
+  height: 8px;
+  background: #F6D616;
+  border-radius: 50%;
+}
+
+.category__item--orange:before {
+  background: #ED5338;
+}
+
+.category__item:not(:last-child) {
+  margin-right: 11px;
+}
+
+.category--needs {
+  margin-bottom: 26px;
+}
+
+.category--industry {
+  margin-bottom: 36px;
+}
+
+.category--results {
+  margin-bottom: 46px;
+}
+
+.category--activity {
+  margin-bottom: 30px;
+}
+
+.results-item {
+  width: 224px;
+  height: 40px;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  background: #4E8EF8 url("/img/user-info/next.svg") center right 22px no-repeat;
+  color: #fff;
+  padding: 12px 48px 12px 18px;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.results-item:hover {
+  opacity: .9;
+}
+
+.activity__item {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.activity__item:not(:last-child) {
+  margin-right: 38px;
+}
+
+.activity__img {
+  margin-right: 14px;
+}
+
 .user__more-info {
-  height: 100vh;
   width: 500px;
   background: #FFF;
   border: 1px #000 solid;
