@@ -1,0 +1,56 @@
+.user__main {
+  display: flex;
+  flex-grow: 1;
+  background: $item-bg;
+  border-radius: 16px 0 0 16px;
+  overflow: hidden;
+  padding: 40px 50px 55px 35px;
+}
+
+.user__bio {
+  display: flex;
+}
+
+.user__avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 7px;
+  object-fit: cover;
+  margin: 0 30px 30px 0;
+}
+
+.user__name {
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  display: flex;
+  margin-bottom: 20px;
+
+  & img:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.role__title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.role__name {
+  font-size: 14px;
+  color: $secondary-text-color;
+  margin-bottom: 20px;
+}
+
+.user__description {
+  font-size: 14px;
+  color: $secondary-text-color;
+}

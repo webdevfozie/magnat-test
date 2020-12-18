@@ -1,0 +1,76 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 30px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  color: $secondary-text-color;
+}
+
+.menu__item {
+  padding: 25px;
+  cursor: pointer;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.menu__item--active {
+  color: $main-text-color;
+}
+
+.profile-menu {
+  display: flex;
+  align-items: center;
+}
+
+.profile-menu__item {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.profile-menu__money-count {
+  font-size: 14px;
+}
+
+.profile-menu__wallet-img {
+  margin-right: 12px;
+}
+
+.profile-menu__guide-img {
+  padding-top: 4px;
+}
+
+.profile-menu__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  background: #C4C4C4;
+}
+
+.profile-menu__extend {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: url('/img/nav/extend.svg') center top no-repeat;
+  cursor: pointer;
+
+}
