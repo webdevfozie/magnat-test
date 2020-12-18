@@ -1,5 +1,6 @@
 .user__main {
   display: flex;
+  justify-content: space-between;
   flex-grow: 1;
   background: $item-bg;
   border-radius: 16px 0 0 16px;
@@ -8,7 +9,7 @@
 }
 
 .user__profile {
-  max-width: 630px;
+  margin-right: 20px;
 }
 
 .user__bio {
@@ -87,6 +88,10 @@
   border-radius: 34px;
   padding: 5px 8px 5px 24px;
 
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -102,10 +107,6 @@
 
 .category__item--orange:before {
   background: #ED5338;
-}
-
-.category__item:not(:last-child) {
-  margin-right: 11px;
 }
 
 .category--needs {
@@ -148,10 +149,10 @@
   position: relative;
   font-size: 14px;
   font-weight: 600;
-}
 
-.activity__item:not(:last-child) {
-  margin-right: 38px;
+  &:not(:last-child) {
+    margin-right: 38px;
+  }
 }
 
 .activity__img {

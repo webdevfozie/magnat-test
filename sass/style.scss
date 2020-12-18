@@ -20,7 +20,23 @@ body {
   display: flex;
 }
 
+.row {
+  display: flex;
+  flex-direction: row
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.jcc {
+  justify-content: center;
+}
+
 @import 'blocks/_msg';
 @import 'blocks/_sidebar';
 @import 'blocks/_nav';
-@import 'blocks/_user';
+@import 'blocks/_analytics';
+@import 'blocks/_user-profile';
+@import 'blocks/_more-info';
