@@ -2,7 +2,7 @@
 @import "_fonts";
 
 html {
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova", sans-serif;
   color: $main-text-color;
 
   & * :focus {
