@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мой бизнес</title>
   <link rel="stylesheet" href="css/minireset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.css"
+    integrity="sha512-w+u2vZqMNUVngx+0GVZYM21Qm093kAexjueWOv9e9nIeYJb1iEfiHC7Y+VvmP/tviQyA5IR32mwN/5hTEJx6Ng=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -90,7 +93,16 @@
           <div class="row">
             <div class="user__profile">
               <div class="user__bio">
-                <img class="user__avatar" src="/img/user-info/user.jpg" alt="User">
+                <div class="user__avatar-wrap">
+                  <input class="user__avatar-btn" type="file">
+                  <img src="/img/user-info/user.jpg" class="user__avatar" alt="User">
+                  <div class="user__icons">
+                    <img src="/img/user-info/bookmark.svg" alt="bookmark" class="user__icon">
+                    <img src="/img/user-info/note.svg" alt="note" class="user__icon">
+                    <img src="/img/user-info/add-user.svg" alt="add-uicon" class="user__icon">
+                    <img src="/img/user-info/share.svg" alt="share" class="user__icon">
+                  </div>
+                </div>
                 <div class="user__info">
                   <span class="user__name">
                     Петров Владимир Викторович
@@ -110,12 +122,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="user__icons">
-                <img src="/img/user-info/bookmark.svg" alt="bookmark" class="user__icon">
-                <img src="/img/user-info/note.svg" alt="note" class="user__icon">
-                <img src="/img/user-info/add-user.svg" alt="add-uicon" class="user__icon">
-                <img src="/img/user-info/share.svg" alt="share" class="user__icon">
               </div>
               <div class="category category--needs">
                 <div class="category__title">Потребности</div>
@@ -420,7 +426,7 @@
               </div>
               <!-- Event-3 -->
               <div class="events__row event">
-                <div class="events__col-1 event__avatar">
+                <div class="events__col-1 event__avatar event__avatar event__avatar--rub">
                   <img class="event__icon" src="/img/user-info/star.svg" alt="star">
                   <img class="event__img" src="/img/user-info/events/3.jpg" alt="event">
                 </div>
@@ -458,7 +464,7 @@
               </div>
               <!-- Event-4 -->
               <div class="events__row event">
-                <div class="events__col-1 event__avatar">
+                <div class="events__col-1 event__avatar event__avatar--rub">
                   <img class="event__icon" src="/img/user-info/star.svg" alt="star">
                   <img class="event__img" src="/img/user-info/events/2.jpg" alt="event">
                 </div>
@@ -545,6 +551,10 @@
   </div>
   </main>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.js"
+    integrity="sha512-9pGiHYK23sqK5Zm0oF45sNBAX/JqbZEP7bSDHyt+nT3GddF+VFIcYNqREt0GDpmFVZI3LZ17Zu9nMMc9iktkCw=="
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

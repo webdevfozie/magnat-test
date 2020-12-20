@@ -37,11 +37,11 @@
 }
 
 .events__col-2 {
-  width: 25%;
+  width: 27%;
 }
 
 .events__col-3 {
-  width: 26%;
+  width: 24%;
 }
 
 .events__col-4 {
@@ -50,6 +50,20 @@
 
 .events__col-5 {
   width: 12%;
+}
+
+.event__avatar--rub {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 18px;
+    bottom: 5px;
+    width: 18px;
+    height: 18px;
+    background: url('/img/rub.svg');
+  }
 }
 
 .events__name {}
