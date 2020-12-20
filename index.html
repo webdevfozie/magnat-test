@@ -87,120 +87,415 @@
       </nav>
       <div class="user row">
         <div class="user__main">
-          <div class="user__profile">
-            <div class="user__bio">
-              <img class="user__avatar" src="/img/user-info/user.jpg" alt="User">
-              <div class="user__info">
-                <span class="user__name">
-                  Петров Владимир Викторович
+          <div class="row">
+            <div class="user__profile">
+              <div class="user__bio">
+                <img class="user__avatar" src="/img/user-info/user.jpg" alt="User">
+                <div class="user__info">
+                  <span class="user__name">
+                    Петров Владимир Викторович
+                  </span>
+                  <div class="status">
+                    <img src="/img/user-info/level.svg" alt="level">
+                    <img src="/img/user-info/check.svg" alt="level">
+                  </div>
+                  <div class="role">
+                    <div class="role__title">Роли на платформе</div>
+                    <div class="role__name">Представитель компании</div>
+                    <div class="user__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore
+                      et
+                      dolore ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="user__icons">
+                <img src="/img/user-info/bookmark.svg" alt="bookmark" class="user__icon">
+                <img src="/img/user-info/note.svg" alt="note" class="user__icon">
+                <img src="/img/user-info/add-user.svg" alt="add-uicon" class="user__icon">
+                <img src="/img/user-info/share.svg" alt="share" class="user__icon">
+              </div>
+              <div class="category category--needs">
+                <div class="category__title">Потребности</div>
+                <span class="tag">Карьерная консультация</span>
+                <span class="tag">Коучинг</span>
+              </div>
+              <div class="category category--industry">
+                <div class="category__title">Отрасль/сфера деятельности</div>
+                <span class="tag tag--orange">Роботизация</span>
+              </div>
+              <div class="category category--results results">
+                <div class="category__title">Результаты</div>
+                <button type="button" class="results-item">Лаборатория профиля</button>
+              </div>
+              <div class="category category--activity activity">
+                <div class="category__title">Активность на платформе</div>
+                <span class="activity__item">
+                  <img class="activity__img" src="/img/user-info/star.svg" alt="star">
+                  Основатель
                 </span>
-                <div class="status">
-                  <img src="/img/user-info/level.svg" alt="level">
-                  <img src="/img/user-info/check.svg" alt="level">
-                </div>
-                <div class="role">
-                  <div class="role__title">Роли на платформе</div>
-                  <div class="role__name">Представитель компании</div>
-                  <div class="user__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore ...
+                <span class="activity__item">
+                  <img class="activity__img" src="/img/user-info/union.svg" alt="union">
+                  Участник
+                </span>
+              </div>
+            </div>
+            <div class="user__analytic analytic">
+              <div class="analytic__title">Аналитика профиля </div>
+              <div class="row">
+                <div class="analytic__block analytic__block--small">
+                  <div class="analytic__block-title">
+                    Число упоминаний
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="user__icons">
-              <img src="/img/user-info/bookmark.svg" alt="bookmark" class="user__icon">
-              <img src="/img/user-info/note.svg" alt="note" class="user__icon">
-              <img src="/img/user-info/add-user.svg" alt="add-uicon" class="user__icon">
-              <img src="/img/user-info/share.svg" alt="share" class="user__icon">
-            </div>
-            <div class="category category--needs">
-              <div class="category__title">Потребности</div>
-              <span class="category__item">Карьерная консультация</span>
-              <span class="category__item">Коучинг</span>
-            </div>
-            <div class="category category--industry">
-              <div class="category__title">Отрасль/сфера деятельности</div>
-              <span class="category__item category__item--orange">Роботизация</span>
-            </div>
-            <div class="category category--results results">
-              <div class="category__title">Результаты</div>
-              <button type="button" class="results-item">Лаборатория профиля</button>
-            </div>
-            <div class="category category--activity activity">
-              <div class="category__title">Активность на платформе</div>
-              <span class="activity__item">
-                <img class="activity__img" src="/img/user-info/star.svg" alt="star">
-                Основатель
-              </span>
-              <span class="activity__item">
-                <img class="activity__img" src="/img/user-info/union.svg" alt="union">
-                Участник
-              </span>
-            </div>
-          </div>
-          <div class="user__analytic analytic">
-            <div class="analytic__title">Аналитика профиля </div>
-            <div class="row">
-              <div class="analytic__block analytic__block--small">
-                <div class="analytic__block-title">
-                  Число упоминаний
-                </div>
-                <div class="analytic__block-number">
-                  74
-                </div>
-                <div class="analytic__block-caption">
-                  Подпись <br> текст
-                </div>
-              </div>
-              <div class="analytic__block analytic__block--small">
-                <div class="analytic__block-title">
-                  Отвечает на запросы
-                </div>
-                <div class="row jcc">
                   <div class="analytic__block-number">
-                    87
+                    74
                   </div>
-                  <div class="analytic__block-percent">%</div>
+                  <div class="analytic__block-caption">
+                    Подпись <br> текст
+                  </div>
                 </div>
-                <div class="analytic__block-caption">
-                  Санкт-Петербург, Россия
+                <div class="analytic__block analytic__block--small">
+                  <div class="analytic__block-title">
+                    Отвечает на запросы
+                  </div>
+                  <div class="row jcc">
+                    <div class="analytic__block-number">
+                      87
+                    </div>
+                    <div class="analytic__block-percent">%</div>
+                  </div>
+                  <div class="analytic__block-caption">
+                    Санкт-Петербург, Россия
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="analytic__block analytic__block--charts" style="margin-bottom: 24px;">
-              <div class="charts-img">
-                <img src="/img/user-info/charts-template.png" alt="">
+              <div class="analytic__block analytic__block--charts" style="margin-bottom: 24px;">
+                <div class="charts-img">
+                  <img src="/img/user-info/charts-template.png" alt="">
+                </div>
+                <div class="chart-name chart-name--orange">Участвует в мероприятиях</div>
+                <div class="chart-name chart-name--green">Участвует в проектах </div>
+                <div class="chart-name chart-name--blue">Инвестирует в проектах </div>
               </div>
-              <div class="chart-name chart-name--orange">Участвует в мероприятиях</div>
-              <div class="chart-name chart-name--green">Участвует в проектах </div>
-              <div class="chart-name chart-name--blue">Инвестирует в проектах </div>
-            </div>
-            <div class="related">
-              <div class="related__title">
-                Связанные профили
+              <div class="related">
+                <div class="related__title">
+                  Связанные профили
+                </div>
+                <div class="analytic__block related__profiles row">
+                  <img class="related__profiles-img" src="/img/user-info/related/1.jpg" alt="#">
+                  <img class="related__profiles-img" src="/img/user-info/related/2.jpg" alt="#">
+                  <img class="related__profiles-img" src="/img/user-info/related/3.jpg" alt="#">
+                  <img class="related__profiles-img" src="/img/user-info/related/4.jpg" alt="#">
+                  <img class="related__profiles-img" src="/img/user-info/related/5.jpg" alt="#">
+                  <img class="related__profiles-img" src="/img/user-info/related/6.jpg" alt="#">
+                  <img class="related__profiles-img" src="/img/user-info/related/7.jpg" alt="#">
+                </div>
+                <div class="slider row">
+                  <div class="slider__arrow slider__arrow--prev"></div>
+                  <div class="slider__dot"></div>
+                  <div class="slider__dot slider__dot--active"></div>
+                  <div class="slider__dot"></div>
+                  <div class="slider__arrow slider__arrow--next"></div>
+                </div>
               </div>
-              <div class="analytic__block related__profiles row">
-                <img src="/img/user-info/related/1.jpg" alt="#">
-                <img src="/img/user-info/related/2.jpg" alt="#">
-                <img src="/img/user-info/related/3.jpg" alt="#">
-                <img src="/img/user-info/related/4.jpg" alt="#">
-                <img src="/img/user-info/related/5.jpg" alt="#">
-                <img src="/img/user-info/related/6.jpg" alt="#">
-                <img src="/img/user-info/related/7.jpg" alt="#">
-              </div>
-              <div class="related__nav row">
-                <div class="related__arrow related__arrow--prev"></div>
-                <div class="related__dot"></div>
-                <div class="related__dot related__dot--active"></div>
-                <div class="related__dot"></div>
-                <div class="related__arrow related__arrow--next"></div>
-              </div>
-            </div>
 
+            </div>
           </div>
+          <div class="row mb26">
+            <div class="card">
+              <div class="card__title">Проекты</div>
+              <div class="card-block">
+                <div class="card-block__post">
+                  <img class="card-block__icon activity__img"" src="/img/user-info/star.svg" alt="star">
+                  Основатель
+                </div>
+                <div class="row mb26 jcsb">
+                  <div class="card-block__img">
+                    <img src="/img/user-info/card/1.jpg" alt="#">
+                  </div>
+                  <div class="card-block__text col">
+                    <div class="card-block__title">Орион</div>
+                    <div class="card-block__subtext">Стадия проекта</div>
+                    <div class="card-block__subtitle">Создание прототипа</div>
+                    <div class="card-block__subtext">Объем финансирования:</div>
+                    <div class="card-block__subtitle card-block__subtitle--main">
+                      5-6 млн
+                      <span class="card-block__subtitle--progress">15%</span>
+                    </div>
+                    <div class="card-block__main-text">
+                      <div class="card-block__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore ...
+                      </div>
+                      <a href="#" class="card-block__extend" type="button">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="card-block__btns col">
+                    <button class="actions card-block__btn" type="button">
+                      <img src="/img/user-info/card/bookmark.svg" alt="#">
+                    </button>
+                    <button class="actions card-block__btn" type="button">
+                      <img src="/img/user-info/card/share.svg" alt="#">
+                    </button>
+                    <button class="actions card-block__btn" type="button">
+                      <img src="/img/user-info/card/comment.svg" alt="#">
+                    </button>
+                    <button class="actions card-block__btn" type="button">
+                      <img src="/img/user-info/card/disable.svg" alt="#">
+                    </button>
+                  </div>
+                </div>
+                <div class="col card__tags">
+                  <div class="row mb16">
+                    <div class="tag tag--card">Социальные услуги</div>
+                    <div class="tag tag--card">FoodTech</div>
+                    <div class="tag tag--card">Роботизация</div>
+                    <div class="tag-more">+2</div>
+                  </div>
+                  <div class="row">
+                    <div class="tag tag--orange tag--card">Роботизация</div>
+                    <div class="tag tag--orange tag--card">FoodTech</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider row">
+                <div class="slider__arrow slider__arrow--prev"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot slider__dot--active"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__arrow slider__arrow--next"></div>
+              </div>
+            </div>
 
+            <div class="card">
+              <div class="card__title">Организации</div>
+              <div class="card-block">
+                <div class="card-block__post">
+                  <img class="card-block__icon activity__img"" src="/img/user-info/star.svg" alt="star">
+                  Основатель
+                </div>
+                <div class="row mb26 jcsb">
+                  <div class="card-block__img">
+                    <img src="/img/user-info/card/2.jpg" alt="#">
+                    <img src="/img/user-info/level.svg" alt="level">
+                  </div>
+
+                  <div class="card-block__text col">
+                    <div class="card-block__title">Стройтех</div>
+                    <div class="card-block__main-text">
+                      <div class="card-block__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore ...
+                      </div>
+                      <a href="#" class="card-block__extend" type="button">Подробнее</a>
+                    </div>
+
+                  </div>
+
+                  <div class="card-block__btns col">
+                    <button class="actions card-block__btn" type="button">
+                      <img src="/img/user-info/card/bookmark.svg" alt="#">
+                    </button>
+                    <button class="actions card-block__btn" type="button">
+                      <img src="/img/user-info/card/share.svg" alt="#">
+                    </button>
+                    <button class="actions card-block__btn" type="button">
+                      <img src="/img/user-info/card/comment.svg" alt="#">
+                    </button>
+                    <button class="actions card-block__btn" type="button">
+                      <img src="/img/user-info/card/disable.svg" alt="#">
+                    </button>
+                  </div>
+                </div>
+                <div class="col card__tags">
+                  <div class="row mb16">
+                    <div class="tag tag--green tag--card">Роботизация</div>
+                    <div class="tag tag--green tag--card">FoodTech</div>
+                    <div class="tag-more">+2</div>
+                  </div>
+                  <div class="row mb16">
+                    <div class="tag tag--card">Социальные услуги</div>
+                  </div>
+                  <div class="row">
+                    <div class="tag tag--orange tag--card">FoodTech</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider row">
+                <div class="slider__arrow slider__arrow--prev"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot slider__dot--active"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__arrow slider__arrow--next"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="events">
+              <div class="events__title">Мероприятия</div>
+              <div class="events__row events__header">
+                <div class="events__col-1"></div>
+                <div class="events__col-2">Название мероприятия</div>
+                <div class="events__col-3">Таймер</div>
+                <div class="events__col-4">Местоположение</div>
+                <div class="events__col-5"></div>
+              </div>
+              <!-- Event-1 -->
+              <div class="events__row event">
+                <div class="events__col-1 event__avatar">
+                  <img class="event__icon" src="/img/user-info/star.svg" alt="star">
+                  <img class="event__img" src="/img/user-info/events/1.jpg" alt="event">
+                </div>
+                <div class="events__col-2 col">
+                  <h2 class="event__title">Инновационный форум</h2>
+                  <p class="event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    ...</p>
+                </div>
+                <div class="events__col-3 col">
+                  <div class="event__until">до мероприятия</div>
+                  <div class="event__timer">
+                    <span>1</span> <span>день</span> <span>08</span> <span>:</span> <span>23</span>
+                  </div>
+                </div>
+                <div class="events__col-4 event__location">
+                  Санкт-Петербург
+                </div>
+                <div class="events__col-5 col">
+                  <div class="event__btns">
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/bookmark.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/share.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/comment.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/disable.svg" alt="#">
+                    </button>
+                  </div>
+                  <a href="#" class="event__extend" type="button">Подробнее</a>
+                </div>
+              </div>
+              <!-- Event-2 -->
+              <div class="events__row event">
+                <div class="events__col-1 event__avatar">
+                  <img class="event__icon" src="/img/user-info/star.svg" alt="star">
+                  <img class="event__img" src="/img/user-info/events/2.jpg" alt="event">
+                </div>
+                <div class="events__col-2 col">
+                  <h2 class="event__title">Неделя агротехники</h2>
+                  <p class="event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    ...</p>
+                </div>
+                <div class="events__col-3 col">
+                  <div class="event__until">до мероприятия</div>
+                  <div class="event__timer">
+                    <span>3</span> <span>дня</span> <span>20</span> <span>:</span> <span>24</span>
+                  </div>
+                </div>
+                <div class="events__col-4 event__location">
+                  Москва
+                </div>
+                <div class="events__col-5 col">
+                  <div class="event__btns">
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/bookmark.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/share.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/comment.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/disable.svg" alt="#">
+                    </button>
+                  </div>
+                  <a href="#" class="event__extend" type="button">Подробнее</a>
+                </div>
+              </div>
+              <!-- Event-3 -->
+              <div class="events__row event">
+                <div class="events__col-1 event__avatar">
+                  <img class="event__icon" src="/img/user-info/star.svg" alt="star">
+                  <img class="event__img" src="/img/user-info/events/3.jpg" alt="event">
+                </div>
+                <div class="events__col-2 col">
+                  <h2 class="event__title">Экспо 2020</h2>
+                  <p class="event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    ...</p>
+                </div>
+                <div class="events__col-3 col">
+                  <div class="event__until">до мероприятия</div>
+                  <div class="event__timer">
+                    <span>1</span> <span>день</span> <span>08</span> <span>:</span> <span>23</span>
+                  </div>
+                </div>
+                <div class="events__col-4 event__location">
+                  Москва
+                </div>
+                <div class="events__col-5 col">
+                  <div class="event__btns">
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/bookmark.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/share.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/comment.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/disable.svg" alt="#">
+                    </button>
+                  </div>
+                  <a href="#" class="event__extend" type="button">Подробнее</a>
+                </div>
+              </div>
+              <!-- Event-4 -->
+              <div class="events__row event">
+                <div class="events__col-1 event__avatar">
+                  <img class="event__icon" src="/img/user-info/star.svg" alt="star">
+                  <img class="event__img" src="/img/user-info/events/2.jpg" alt="event">
+                </div>
+                <div class="events__col-2 col">
+                  <h2 class="event__title">Название мероприятия</h2>
+                  <p class="event__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    ...</p>
+                </div>
+                <div class="events__col-3 col">
+                  <div class="event__until">до мероприятия</div>
+                  <div class="event__timer">
+                    <span>1</span> <span>дня</span> <span>05</span> <span>:</span> <span>23</span>
+                  </div>
+                </div>
+                <div class="events__col-4 event__location">
+                  Санкт-Петербург
+                </div>
+                <div class="events__col-5 col">
+                  <div class="event__btns">
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/bookmark.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/share.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/comment.svg" alt="#">
+                    </button>
+                    <button class="actions events__btn" type="button">
+                      <img src="/img/user-info/card/disable.svg" alt="#">
+                    </button>
+                  </div>
+                  <a href="#" class="event__extend" type="button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="user__more-info">
           Дополнительная информация о пользователе

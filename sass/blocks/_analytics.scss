@@ -101,38 +101,9 @@
   justify-content: space-between;
 }
 
-.related__nav {
-  justify-content: center;
-  align-items: center;
-}
-
-.related__arrow {
-  width: 12px;
-  height: 12px;
-  border: 2px $main-color solid;
-  transform: rotate(45deg);
-  margin: 5px;
-  cursor: pointer;
-}
-
-.related__arrow--prev {
-  border-right: none;
-  border-top: none;
-}
-
-.related__arrow--next {
-  border-left: none;
-  border-bottom: none;
-}
-
-.related__dot {
-  width: 6px;
-  height: 6px;
-  background: $secondary-text-color;
-  border-radius: 50%;
-  margin: 3px;
-}
-
-.related__dot--active {
-  background: $main-color;
+.related__profiles-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 7px;
 }

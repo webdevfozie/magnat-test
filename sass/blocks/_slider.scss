@@ -1,0 +1,35 @@
+.slider {
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__arrow {
+  width: 12px;
+  height: 12px;
+  border: 2px $main-color solid;
+  transform: rotate(45deg);
+  margin: 5px;
+  cursor: pointer;
+}
+
+.slider__arrow--prev {
+  border-right: none;
+  border-top: none;
+}
+
+.slider__arrow--next {
+  border-left: none;
+  border-bottom: none;
+}
+
+.slider__dot {
+  width: 6px;
+  height: 6px;
+  background: $secondary-text-color;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.slider__dot--active {
+  background: $main-color;
+}

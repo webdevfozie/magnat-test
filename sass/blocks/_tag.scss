@@ -1,0 +1,43 @@
+.tag {
+  position: relative;
+  font-size: 14px;
+  align-self: center;
+  color: $secondary-text-color;
+  border: 1px $secondary-text-color solid;
+  border-radius: 34px;
+  padding: 5px 8px 5px 24px;
+
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-55%);
+    width: 8px;
+    height: 8px;
+    background: #F6D616;
+    border-radius: 50%;
+  }
+}
+
+.tag--card {
+  color: $main-text-color;
+}
+
+.tag--orange:before {
+  background: #ED5338;
+}
+
+.tag--green:before {
+  background: #2EB349;
+}
+
+.tag-more {
+  align-self: center;
+  font-weight: 600;
+  color: $main-color;
+}
