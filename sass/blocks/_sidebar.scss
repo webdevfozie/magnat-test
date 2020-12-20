@@ -62,7 +62,7 @@
 }
 
 .sidebar__item--plus {
-  background: url('img/sidebar-icons/extend.svg') right 17px center no-repeat;
+  background: url('../img/sidebar-icons/extend.svg') right 17px center no-repeat;
 }
 
 .extend {
@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
   height: 35px;
-  background: $main-bg url('img/sidebar-icons/Edit.svg') right 15px center no-repeat;
+  background: $main-bg url('../img/sidebar-icons/Edit.svg') right 15px center no-repeat;
   padding-left: 70px;
   padding-right: 40px;
 
@@ -95,7 +95,7 @@
 
 .item-disable {
   cursor: auto;
-  background: url('img/sidebar-icons/lock.svg') right 20px center no-repeat;
+  background: url('../img/sidebar-icons/lock.svg') right 20px center no-repeat;
 }
 
 .sidebar__img-wrap {

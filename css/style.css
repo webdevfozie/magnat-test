@@ -230,7 +230,7 @@ body {
 }
 
 .sidebar__item--plus {
-  background: url("img/sidebar-icons/extend.svg") right 17px center no-repeat;
+  background: url("../img/sidebar-icons/extend.svg") right 17px center no-repeat;
 }
 
 .extend {
@@ -242,7 +242,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 35px;
-  background: #F7F7F7 url("img/sidebar-icons/Edit.svg") right 15px center no-repeat;
+  background: #F7F7F7 url("../img/sidebar-icons/Edit.svg") right 15px center no-repeat;
   padding-left: 70px;
   padding-right: 40px;
 }
@@ -268,7 +268,7 @@ body {
 
 .item-disable {
   cursor: auto;
-  background: url("img/sidebar-icons/lock.svg") right 20px center no-repeat;
+  background: url("../img/sidebar-icons/lock.svg") right 20px center no-repeat;
 }
 
 .sidebar__img-wrap {
@@ -374,7 +374,7 @@ body {
   height: 20px;
   padding: 0;
   border: none;
-  background: url("/img/nav/extend.svg") center top no-repeat;
+  background: url("../img/nav/extend.svg") center top no-repeat;
   cursor: pointer;
 }
 
@@ -530,7 +530,7 @@ body {
   border-radius: 7px;
   border: none;
   cursor: pointer;
-  background: #4E8EF8 url("img/user-info/next.svg") center right 22px no-repeat;
+  background: #4E8EF8 url("../img/user-info/next.svg") center right 22px no-repeat;
   color: #fff;
   padding: 12px 58px 12px 18px;
   -webkit-transition: opacity .2s;
@@ -959,7 +959,7 @@ body {
   bottom: 5px;
   width: 18px;
   height: 18px;
-  background: url("/img/rub.svg");
+  background: url("../img/rub.svg");
 }
 
 .event__avatar {
@@ -1066,7 +1066,7 @@ body {
   content: '';
   width: 25px;
   height: 25px;
-  background: url("/img/hide.svg");
+  background: url("../img/hide.svg");
 }
 
 .more-info__title {
