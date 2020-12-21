@@ -1,7 +1,7 @@
 const ctx = document.getElementById('main-chart').getContext('2d')
 
 function getRandonArr(lenght) {
-  const randomArr = [0]
+  const randomArr = []
   for (let i = 0; i < lenght; i++) {
     let randomNum = Math.floor(Math.random() * 10) + 1 + ''
     randomArr.push(+randomNum)
@@ -41,7 +41,7 @@ const chart = new Chart(ctx, {
         data: getRandonArr(5),
       },
     ],
-    labels: ['', '', '', '', '', ''],
+    labels: ['', '', '', '', ''],
   },
 
   options: {
