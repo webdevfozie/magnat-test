@@ -94,7 +94,7 @@
             <div class="user__profile">
               <div class="user__bio">
                 <div class="user__avatar-wrap">
-                  <input class="user__avatar-btn" type="file">
+                  <input class="user__avatar-btn" type="file" accept="image/*,image/jpeg">
                   <img src="img/user-info/user.jpg" class="user__avatar" alt="User">
                   <div class="user__icons">
                     <img src="img/user-info/bookmark.svg" alt="bookmark" class="user__icon">
@@ -178,12 +178,10 @@
                 </div>
               </div>
               <div class="analytic__block analytic__block--charts" style="margin-bottom: 24px;">
+
                 <div class="charts-img">
-                  <img src="img/user-info/charts-template.png" alt="">
+                  <canvas id="main-chart"></canvas>
                 </div>
-                <div class="chart-name chart-name--orange">Участвует в мероприятиях</div>
-                <div class="chart-name chart-name--green">Участвует в проектах </div>
-                <div class="chart-name chart-name--blue">Инвестирует в проектах </div>
               </div>
               <div class="related">
                 <div class="related__title">
@@ -554,6 +552,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.9/cropper.min.js"
     integrity="sha512-9pGiHYK23sqK5Zm0oF45sNBAX/JqbZEP7bSDHyt+nT3GddF+VFIcYNqREt0GDpmFVZI3LZ17Zu9nMMc9iktkCw=="
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="index.js"></script>
 </body>
 

@@ -53,41 +53,8 @@
   padding: 20px 20px 14px 24px;
 }
 
-.charts-img {
-  margin-bottom: 18px;
-}
-
-.chart-name {
-  position: relative;
-  font-size: 14px;
-  padding-left: 40px;
-
-  &:not(:last-child) {
-    margin-bottom: 8px;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
-}
-
-.chart-name--orange:before {
-  background: #ED5338;
-}
-
-.chart-name--green:before {
-  background: #2EB349;
-}
-
-.chart-name--blue:before {
-  background: #2A99FF;
+#main-chart {
+  width: 100%;
 }
 
 .related__title {
