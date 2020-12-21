@@ -10,9 +10,7 @@ function getRandonArr(lenght) {
 }
 
 const chart = new Chart(ctx, {
-  // The type of chart we want to create
   type: 'line',
-  // The data for our dataset
   data: {
     datasets: [
       {
@@ -22,7 +20,7 @@ const chart = new Chart(ctx, {
         borderColor: '#ED5338',
         backgroundColor: '#fff',
         pointRadius: 0,
-        data: getRandonArr(3),
+        data: getRandonArr(5),
       },
       {
         label: 'Участвует в проектах',
@@ -31,7 +29,7 @@ const chart = new Chart(ctx, {
         borderColor: '#2EB349',
         backgroundColor: '#fff',
         pointRadius: 0,
-        data: getRandonArr(3),
+        data: getRandonArr(5),
       },
       {
         label: 'Инвестирует в проектах',
@@ -40,13 +38,12 @@ const chart = new Chart(ctx, {
         borderColor: '#2A99FF',
         backgroundColor: '#fff',
         pointRadius: 0,
-        data: getRandonArr(3),
+        data: getRandonArr(5),
       },
     ],
-    labels: ['', '', '', ''],
+    labels: ['', '', '', '', '', ''],
   },
 
-  // Configuration options go here
   options: {
     responsive: true,
     scales: {
@@ -59,7 +56,7 @@ const chart = new Chart(ctx, {
       ],
       yAxes: [
         {
-          display: false,
+          display: true,
           gridLines: {
             display: false,
           },
