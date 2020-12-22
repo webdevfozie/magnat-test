@@ -1,3 +1,4 @@
+// Charts
 const ctx = document.getElementById('main-chart').getContext('2d')
 
 function getRandonArr(lenght) {
@@ -79,24 +80,49 @@ const chart = new Chart(ctx, {
   },
 })
 
-// const avatarBtn = document.querySelector('.user__avatar-btn')
-// const avatar = document.querySelector('.user__avatar')
-// const resBtn = document.querySelector('.results-item')
-// avatarBtn.addEventListener('change', e => {
-//   console.log(e.target.files[0])
-//   new Cropper(avatar, {
-//     aspectRatio: 1 / 1,
-//     // crop(event) {
-//     //   console.log(event.detail.x)
-//     //   console.log(event.detail.y)
-//     //   console.log(event.detail.width)
-//     //   console.log(event.detail.height)
-//     //   console.log(event.detail.rotate)
-//     //   console.log(event.detail.scaleX)
-//     //   console.log(event.detail.scaleY)
-//     // },
-//   })
-// })
-// resBtn.addEventListener('click', () => {
-//   console.log(avatarBtn.files[0])
-// })
+// Cropper
+const avatarInput = document.querySelector('.user__avatar-btn')
+const preview = document.querySelector('.preview')
+const done = document.querySelector('.avatar-done')
+const avatar = document.querySelector('.user__avatar')
+
+function previewFile(img) {
+  let file = avatarInput.files[0]
+  let reader = new FileReader()
+
+  reader.onloadend = function () {
+    img.src = reader.result
+  }
+
+  if (file) {
+    reader.readAsDataURL(file)
+  } else {
+    img.src = ''
+  }
+}
+
+avatarInput.addEventListener('change', () => {
+  done.classList.remove('hide')
+  preview.classList.remove('hide')
+
+  previewFile(avatar)
+
+  setTimeout(() => {
+    new Cropper(avatar, {
+      aspectRatio: 1 / 1,
+      preview: preview,
+      minContainerWidth: 180,
+      minContainerHeight: 180,
+      ready() {
+        done.addEventListener('click', () => {
+          avatar.style = preview.childNodes[0].getAttribute('style')
+          //Долго мучился, но так как не пока не доводилось работать с canvas,
+          //удалось сделать только так)
+          this.cropper.destroy()
+          done.classList.add('hide')
+          preview.classList.add('hide')
+        })
+      },
+    })
+  }, 10)
+})
